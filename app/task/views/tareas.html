@@ -1,0 +1,28 @@
+<section class="content-header">
+    <h1>
+        {{ titulo }}
+        <small>{{ subtitulo }}</small>
+    </h1>
+</section>
+
+<div class="box-title">
+
+    <input type="search" name="nombre" placeholder="Buscar" ng-model="taskSearch"/>
+</div>
+<div class="box box-default" ng-repeat="(key, tarea) in tareas | filter:taskSearch">
+    <div class="box-header with-border">
+        <h3 class="box-title">{{ tarea.nombre }}</h3>
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+        <div>
+            <span>{{ tarea.descripcion }}</span>
+            <span>{{ tarea.fechalimite }}</span>
+        </div>
+    </div>
+    <div>
+        <button type="submit"
+                ng-click="endTask(tarea)"
+                ng-if="tarea.estado == false">Finalizar</button>
+    </div>
+</div>

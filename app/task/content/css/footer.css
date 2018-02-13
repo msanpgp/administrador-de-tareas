@@ -1,0 +1,12 @@
+.footer {
+    background-color: dodgerblue;
+    padding: 15px;
+    color: white;
+    border-top: 1px solid #1e282c;
+    position: relative;
+
+}
+
+footer {
+    z-index: 820;
+}

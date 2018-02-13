@@ -1,0 +1,91 @@
+{
+  "views": [
+    {
+      "id": 1,
+      "estado": true,
+      "nombre": "Tarea 1",
+      "descripcion": "Tarea para lograr cambiar algo",
+      "fechalimite": "prueba"
+    },
+    {
+      "nombre": "Tarea 2",
+      "descripcion": "Tarea detalle de prueba",
+      "fechalimite": "prueba 2",
+      "estado": true,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "estado": true,
+      "nombre": "Tarea 3",
+      "descripcion": "Tarea detalle de prueba",
+      "fechalimite": "prueba 3"
+    },
+    {
+      "id": 4,
+      "estado": false,
+      "nombre": "Tarea 4",
+      "descripcion": "Tarea detalle de prueba",
+      "fechalimite": "prueba 4"
+    },
+    {
+      "id": 5,
+      "estado": true,
+      "nombre": "Tarea 5",
+      "descripcion": "Tarea detalle de prueba",
+      "fechalimite": "prueba 5"
+    },
+    {
+      "id": 6,
+      "estado": false,
+      "nombre": "Tarea 6",
+      "descripcion": "Tarea detalle de prueba",
+      "fechalimite": "prueba 6"
+    },
+    {
+      "nombre": "hacer algo",
+      "descripcion": "dbemos ponernos a estudiar",
+      "fechalimite": "2018-02-14T04:59:00.000Z",
+      "estado": true,
+      "id": 7
+    },
+    {
+      "fechalimite": null,
+      "estado": true,
+      "id": 8
+    },
+    {
+      "nombre": "Aprender CSS3",
+      "descripcion": "Se debe realizar un estudio del tutorial sobre CC Grid impartido por Juan Nuñez en youtube",
+      "fechalimite": "2018-02-15T05:00:00.000Z",
+      "estado": false,
+      "id": 9
+    },
+    {
+      "nombre": "ddddddd",
+      "descripcion": "aaaaaaa",
+      "fechalimite": "2018-02-14T05:00:00.000Z",
+      "estado": true,
+      "id": 10
+    },
+    {
+      "nombre": "terminar proyecto",
+      "descripcion": "Se debe terminar el proyecto lo mas pronto posible",
+      "fechalimite": "2018-02-14T05:00:00.000Z",
+      "estado": false,
+      "id": 11
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "usuario": "test",
+      "contrasena": "test"
+    },
+    {
+      "id": 2,
+      "usuario": "admin",
+      "contrasena": "admin"
+    }
+  ]
+}

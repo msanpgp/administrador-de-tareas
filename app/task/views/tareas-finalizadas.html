@@ -1,0 +1,19 @@
+<section class="content-header">
+    <h1>
+        {{ titulo }}
+        <small>{{ subtitulo }}</small>
+    </h1>
+</section>
+
+<div class="box box-default" ng-repeat="finalizada in tareasfinalizadas">
+    <div class="box-header with-border">
+        <h3 class="box-title">{{ finalizada.nombre }}</h3>
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+        <div>
+            {{ finalizada.descripcion }}
+            <span>{{ finalizada.fechalimite }}</span>
+        </div>
+    </div>
+</div>

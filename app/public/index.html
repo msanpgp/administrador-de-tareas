@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="loginApp" ng-controller="mainCtrl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminTASK | Log in</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Theme style -->
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+    <link rel="stylesheet" href="content/css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="angular/app.js"></script>
+    <script src="angular/services/login.service.js"></script>
+
+</head>
+<body>
+<div class="page-container">
+    <a><b>Login</b>Task</a>
+    <p>Iniciar Sesion</p>
+
+        <form name="forma" ng-submit="ingresar(datos)">
+            <input type="text" name="usuario" placeholder="Usuario" required="required" ng-model="datos.usuario">
+            <input type="password" name="contrasena" placeholder="Contraseña" required="required" ng-model="datos.contrasena">
+            <button type="submit" ng-disable="forma.$invalid || cargando">Ingresar</button>
+            <div ng-show="invalido">
+            <strong>Verificar!!!</strong>
+            {{ mensaje }}
+            </div>
+        </form>
+    <p>usuario: test</p>
+    <p>contraseña: test</p>
+
+</div><!-- /.login-box -->
+
+</body>
+</html>
